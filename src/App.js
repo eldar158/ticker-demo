@@ -10,11 +10,13 @@ function App() {
   return (
     <div className="App">
 
-      {/* attribute */}
-      <a className='attribute' href='https://www.freepik.com/vectors/electrical-safety'>Electrical safety vector created by macrovector - www.freepik.com</a>
-      
       <Title></Title>
       <PostList posts={posts} displayCount={3}></PostList>
+      
+      {/* attribute */}
+      <a className='attribute' href='https://www.freepik.com/vectors/electrical-safety'>
+        Electrical safety vector created by macrovector - www.freepik.com
+      </a>
 
     </div>
   );
