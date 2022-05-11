@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React,{useState,useEffect} from 'react';
 import './App.css';
 
+import Title from './components/Title/Title'
+import PostList from './components/PostList/PostList'
+
 function App() {
+  const [posts,setPosts]=useState([]);
+
+  const getPosts=()=>{
+    fetch('posts.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((myJson) => {
+        setPosts(myJson.posts)
+      });
+  }
+  useEffect(()=>{getPosts()},[])
+
+  if (!posts) return
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title></Title>
+      <PostList posts={posts}></PostList>
     </div>
   );
 }
