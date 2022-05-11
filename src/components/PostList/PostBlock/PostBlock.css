@@ -7,6 +7,10 @@
   border-radius: 0.25rem;
 
   text-align: left;
+
+
+  --imageSize: 5rem;
+  --imagePadding: 0.25rem;
 }
 
 .PostBlock .postId {
@@ -16,22 +20,23 @@
 
 .PostBlock .postPicture {
   float: left;
-  width: 5rem;
-  height: 5rem;
-  padding: 0.25rem;
+  width: var(--imageSize);
+  height: var(--imageSize);
+  padding: var(--imagePadding);
   border: 2px solid grey;
   border-radius: 0.25rem;
   overflow: hidden;
 }
 
 .PostBlock .postContent {
-  margin-left: 5.5rem;
+  margin-left: calc(var(--imageSize) + 2 *var(--imagePadding));
   padding:  0 1rem;
   text-align: left;
 }
 
 .PostBlock .postContent .postTitle {
   margin: 0 auto 1rem;
+  color: brown;
   font-size: 125%;
   font-weight: normal;
 }

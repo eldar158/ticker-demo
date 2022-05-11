@@ -25,7 +25,7 @@ function App() {
   }
   useEffect(()=>{getPosts()},[])
 
-  if (!posts) return
+  if (!posts || posts.length === 0) return
 
   return (
     <div className="App">
@@ -33,7 +33,7 @@ function App() {
       <a className='attribute' href='https://www.freepik.com/vectors/electrical-safety'>Electrical safety vector created by macrovector - www.freepik.com</a>
       
       <Title></Title>
-      <PostList posts={posts}></PostList>
+      <PostList posts={posts} displayCount={3}></PostList>
     </div>
   );
 }
