@@ -1,0 +1,41 @@
+.PostBlock {
+  margin: 1rem auto;
+  width: 80%;
+
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+
+  text-align: left;
+}
+
+.PostBlock .postId {
+  float: right;
+  margin: 0;
+}
+
+.PostBlock .postPicture {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.25rem;
+  border: 2px solid grey;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.PostBlock .postContent {
+  margin-left: 5.5rem;
+  padding:  0 1rem;
+  text-align: left;
+}
+
+.PostBlock .postContent .postTitle {
+  margin: 0 auto 1rem;
+  font-size: 125%;
+  font-weight: normal;
+}
+
+.PostBlock .postContent .postDescription {
+  margin: 0;
+}

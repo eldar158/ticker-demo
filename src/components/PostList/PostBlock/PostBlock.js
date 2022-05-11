@@ -7,10 +7,16 @@ function PostBlock(props) {
   
   return (
     <div className="PostBlock">
-      {id},
-      {title},
-      {description},
+
+      <p className='postId'>{id}</p>
+      
       <img className='postPicture' src={imagePath} alt={imageAlt}></img>
+
+      <div className='postContent'>
+        <p className='postTitle'>{title}</p>
+        <p className='postDescription'>{description}</p>
+      </div>
+
     </div>
   );
 }
