@@ -42,10 +42,15 @@
 }
 
 .PostBlock .postContent .postTitle {
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.25rem;
   color: brown;
   font-size: 125%;
   font-weight: normal;
+}
+
+.PostBlock .postTime {
+  margin: 0 auto 1rem;
+  font-size: 70%;
 }
 
 .PostBlock .postContent .postDescription {

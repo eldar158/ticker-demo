@@ -35,6 +35,7 @@ function PostList(props) {
           <div key={post.id}>
             <PostBlock
               id={post.id}
+              time={post.time}
               title={post.title}
               description={post.description}
               pictureId={post.pictureId}
