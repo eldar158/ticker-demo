@@ -29,6 +29,9 @@ function App() {
 
   return (
     <div className="App">
+      {/* attribute */}
+      <a className='attribute' href='https://www.freepik.com/vectors/electrical-safety'>Electrical safety vector created by macrovector - www.freepik.com</a>
+      
       <Title></Title>
       <PostList posts={posts}></PostList>
     </div>
