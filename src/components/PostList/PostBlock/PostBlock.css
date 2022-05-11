@@ -8,6 +8,12 @@
 
   text-align: left;
 
+  -webkit-transition: all 0.7s ease-out;
+     -moz-transition: all 0.7s ease-out;
+      -ms-transition: all 0.7s ease-out;
+       -o-transition: all 0.7s ease-out;
+          transition: all 0.7s ease-out;
+
 
   --imageSize: 5rem;
   --imagePadding: 0.25rem;
