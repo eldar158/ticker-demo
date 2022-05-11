@@ -1,6 +1,11 @@
 .PostBlock {
+  --imageSize: 5rem;
+  --imagePadding: 0.25rem;
+
   margin: 1rem auto;
+  
   width: 80%;
+  min-height: calc(var(--imageSize) + var(--imagePadding));
 
   padding: 1rem;
   border: 1px solid black;
@@ -13,10 +18,6 @@
       -ms-transition: all 0.7s ease-out;
        -o-transition: all 0.7s ease-out;
           transition: all 0.7s ease-out;
-
-
-  --imageSize: 5rem;
-  --imagePadding: 0.25rem;
 }
 
 .PostBlock .postId {
