@@ -3,9 +3,9 @@ import './PostBlock.css';
 function PostBlock(props) {
   const {id, time, title, description, pictureId} = props
 
-  const imagePath = `/assets/post-pictures/${pictureId}.png`
+  // const imagePath = `/assets/post-pictures/${pictureId}.png`
   // *when build use this instead
-  // const imagePath = `./assets/post-pictures/${pictureId}.png`
+  const imagePath = `./assets/post-pictures/${pictureId}.png`
 
   const imageAlt = `postPicture ${pictureId}`
   

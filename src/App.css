@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  
+  background-size: "cover";
+  background-repeat:no-repeat; 
+
+   /* Full height */
+   height: 98vh;
 }
 
 .App .attribute {

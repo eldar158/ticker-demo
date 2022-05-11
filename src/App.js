@@ -78,8 +78,13 @@ function App() {
     }
   ]
 
+  // const bgPath = '/assets/bg.png'
+  //use on build
+  const bgPath = './assets/bg.png'
   return (
-    <div className="App">
+    <div className="App"
+      style={{background: `url(${bgPath})`}}
+    >
       {/* attribute */}
       <a className='attribute' href='https://www.freepik.com/vectors/electrical-safety'>Electrical safety vector created by macrovector - www.freepik.com</a>
       

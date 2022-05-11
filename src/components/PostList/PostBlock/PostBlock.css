@@ -18,6 +18,8 @@
       -ms-transition: all 0.7s ease-out;
        -o-transition: all 0.7s ease-out;
           transition: all 0.7s ease-out;
+
+          background-color: white;
 }
 
 .PostBlock .postId {
