@@ -8,8 +8,9 @@
 # testing
 /coverage
 
+# enabled build folder tracking to display the project directly on github
 # production
-/build
+# /build
 
 # misc
 .DS_Store
